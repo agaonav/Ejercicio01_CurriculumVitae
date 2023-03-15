@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Arturo Gaona</title>
+</head>
+<body>
+    <a href="ejer01_hojaVida.html"><p>Volver atrás...</p></a>
+
+    <!-- Encabezado -->
+    <h1>Pongase en contacto</h1>
+    <h3>Arturo Gaona</h3>
+
+    <!-- Formulario de contacto -->
+    <form action="alert('SE HA ENVIODO SU TRABAJO')">
+        <p>
+            <label for="txtNombre">Nombre</label>
+            <input type="text" name="txtNombre" id="txtNombre" maxlength="50" required>
+        </p>
+
+        <p>
+            <label for="txtApellidos">Apellidos</label>
+            <input type="text" name="txtApellidos" id="txtApellidos" maxlength="50" required>
+        </p>
+
+        <p>
+            <label for="txtCorreo">Correo electronico</label>
+            <input type="email" name="txtCorreo" id="txtCorreo" maxlength="128" required>
+        </p>
+
+        <p>
+            <label for="txtTelefono">Teléfono / Celular</label>
+            <input type="tel" name="txtTelefono" id="txtTelefono" minlength="7" maxlength="13" required>
+        </p>
+
+        <p>
+            <label for="optAsunto">Asunto</label>
+            <select name="optAsunto" id="optAsunto" required>
+                <option value>Seleccione una opción...</option>
+                <option value="oferta_empleo">Oferta de empleo</option>
+                <option value="aseosria_consulta">Asesoria o consultas</option>
+                <option value="talleres_ponencia">Talleres y ponencias</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="txtCuerpo">Cuerpo de mensaje</label> <br>
+            <textarea name="txtCuerpo" id="txtCuerpo" cols="30" rows="10" required></textarea>
+        </p>
+
+        <p>
+            <input type="checkbox" name="chbContacto" id="chbContacto" value="0" required>
+            <label for="chbContacto">Acepta que Arturo Gaona pueda ponerse en contacto con usted.</label>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+
+</body>
+</html>
